@@ -1,0 +1,755 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@font-face {
+  font-family: "MultiType Pixel Display Narrow";
+  src: url(../lib/fonts/MultiTypePixel\ DisplayNarrow.otf) format("truetype");
+}
+.container {
+  max-width: 1040px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font: 100% "Roboto Mono", monospace;
+  min-height: 100vh;
+  color: white;
+  background-color: #1c1b1f;
+}
+
+.navbar-container {
+  width: 100vw;
+  height: 100vh;
+}
+.navbar-container header {
+  position: relative;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background: #1c1b1f url(../images/bg-transparent.webp) center/cover no-repeat;
+  overflow: hidden;
+}
+@media only screen and (max-width: 1050px) {
+  .navbar-container header {
+    background: #1c1b1f url(../images/resize/bg-transparent1050.webp) center/cover no-repeat;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar-container header {
+    background: #1c1b1f url(../images/resize/bg-transparent768.webp) center/cover no-repeat;
+  }
+}
+@media only screen and (max-width: 435px) {
+  .navbar-container header {
+    background: #1c1b1f url(../images/resize/bg-transparent435.webp) center/cover no-repeat;
+  }
+}
+.navbar-container header div.logo {
+  display: none;
+}
+.navbar-container header nav {
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+  transition: 0.7s all ease;
+}
+.navbar-container header nav div.container {
+  height: 100%;
+  padding: 0 20px;
+}
+.navbar-container header nav div.container div.navbar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-container header nav div.container div.navbar div.logo {
+  display: flex;
+  position: relative;
+  top: -3px;
+}
+.navbar-container header nav div.container div.navbar div.logo.remove-logo {
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.navbar-container header nav div.container div.navbar div.show-logo {
+  opacity: 1;
+  transform: translateY(0);
+}
+.navbar-container header nav div.container div.navbar div.menu {
+  padding: 0;
+}
+.navbar-container header nav div.container div.navbar div.menu ul.menu-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.navbar-container header nav div.container div.navbar div.menu ul.menu-list li.menu-list-item {
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+}
+.navbar-container header nav div.container div.navbar div.menu ul.menu-list li.menu-list-item a {
+  height: 28px;
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  color: white;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+}
+.navbar-container header nav div.container div.navbar div.menu ul.menu-list li.menu-list-item a ion-icon {
+  font-size: 24px;
+  margin-right: 7px;
+}
+.navbar-container header nav div.container div.navbar div.menu ul.menu-list li.menu-list-item a:hover {
+  transition: 0.3s all ease;
+  color: #47be68;
+}
+.navbar-container header nav div.container div.navbar div.menu ul.menu-list li.menu-list-item:nth-child(4) {
+  margin-right: 0;
+}
+.navbar-container header nav.fixed-nav {
+  background-color: #121214;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 111;
+  transition: 2s all ease;
+}
+.navbar-container header div.container div.header {
+  padding: 0 20px;
+}
+.navbar-container header div.container div.header .header-title {
+  color: white;
+}
+@media only screen and (max-width: 1050px) {
+  .navbar-container header div.container div.header .header-title {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar-container header div.container div.header .header-title {
+    font-size: 44px;
+    line-height: 120%;
+  }
+}
+@media only screen and (max-width: 435px) {
+  .navbar-container header div.container div.header .header-title {
+    font-size: 28px;
+  }
+}
+.navbar-container header div.container div.header div.header-subtitle {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 29px;
+  line-height: 48px;
+  margin-top: 40px;
+}
+@media only screen and (max-width: 1050px) {
+  .navbar-container header div.container div.header div.header-subtitle {
+    font-size: 26px;
+    margin-top: 30px;
+    line-height: 120%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar-container header div.container div.header div.header-subtitle {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 435px) {
+  .navbar-container header div.container div.header div.header-subtitle {
+    font-size: 18px;
+  }
+}
+.navbar-container header div.container div.header a.header-btn {
+  color: white;
+  margin-top: 40px;
+  border: 2px solid white;
+  box-sizing: border-box;
+  border-radius: 32px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 12px 40px;
+}
+@media only screen and (max-width: 435px) {
+  .navbar-container header div.container div.header a.header-btn {
+    font-size: 14px;
+    padding: 10px 30px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .navbar-container {
+    padding: 0;
+  }
+  .navbar-container header {
+    position: relative;
+    z-index: 444;
+  }
+  .navbar-container header .input-checkbox:checked + .nav-button span {
+    background-color: transparent;
+  }
+  .navbar-container header .input-checkbox:checked + .nav-button span::before {
+    top: -13px;
+    transform: rotate(135deg);
+  }
+  .navbar-container header .input-checkbox:checked + .nav-button span::after {
+    top: -32px;
+    transform: rotate(-135deg);
+  }
+  .navbar-container header .nav-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    width: 64px;
+    height: 64px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .navbar-container header .nav-button span::after,
+.navbar-container header .nav-button span::before,
+.navbar-container header .nav-button span {
+    width: 32px;
+    height: 3px;
+    border-radius: 2px;
+    transition: 0.3s;
+    background-color: white;
+  }
+  .navbar-container header .nav-button span::after,
+.navbar-container header .nav-button span::before {
+    content: "";
+    position: relative;
+    display: inline-block;
+  }
+  .navbar-container header .nav-button span::before {
+    top: -20px;
+  }
+  .navbar-container header .nav-button span::after {
+    top: -25px;
+  }
+  .navbar-container header nav {
+    display: flex;
+    position: absolute;
+    margin: 0;
+    right: 0;
+    width: 0;
+    height: 100vh;
+    padding: 0;
+    background-color: rgba(18, 18, 20, 0.5);
+    z-index: 2;
+    transition: all 2s ease-out;
+  }
+  .navbar-container header nav div.container div.navbar {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar-container header nav div.container div.navbar div.logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    height: 64px;
+  }
+  .navbar-container header nav div.container div.navbar div.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .navbar-container header nav div.container div.navbar div.menu ul.menu-list {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .navbar-container header nav div.container div.navbar div.menu ul.menu-list li.menu-list-item {
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-container header nav div.container div.navbar div.menu ul.menu-list li.menu-list-item a::before {
+    border: none;
+  }
+  .navbar-container header nav div.container div.navbar div.menu ul.menu-list li.menu-list-item a::after {
+    border: none;
+  }
+  .navbar-container header nav div.container div.navbar div.menu ul.menu-list li.menu-list-item a:hover,
+.navbar-container header nav div.container div.navbar div.menu ul.menu-list li.menu-list-item a.active {
+    font-weight: 500;
+  }
+  .navbar-container header nav div.container div.navbar div.menu ul.menu-list li.menu-list-item a:hover::before {
+    content: "";
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    border-top: 3px solid;
+    border-left: 3px solid;
+  }
+  .navbar-container header nav div.container div.navbar div.menu ul.menu-list li.menu-list-item a:hover::after {
+    content: "";
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    box-sizing: border-box;
+    border-bottom: 3px solid;
+    border-right: 3px solid;
+  }
+  .navbar-container header nav div.container div.navbar div.menu ul.menu-list li:nth-last-child(1) {
+    margin-right: 0;
+  }
+  .navbar-container header nav.open {
+    display: flex;
+    position: absolute;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    background-color: rgb(18, 18, 20);
+    z-index: 2;
+    transition: all 2s ease-out;
+  }
+}
+footer {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  padding: 62px 0;
+  background: #121214;
+}
+@media only screen and (max-width: 768px) {
+  footer {
+    padding: 40px 0;
+  }
+}
+footer div.container {
+  padding: 0 20px;
+}
+footer div.container div.footer {
+  display: flex;
+  justify-content: space-between;
+  min-width: 250px;
+  width: 250px;
+}
+@media only screen and (max-width: 435px) {
+  footer div.container div.footer {
+    flex-direction: column;
+  }
+}
+footer div.container div.footer ul.footer-list {
+  text-transform: uppercase;
+}
+footer div.container div.footer ul.footer-list li.footer-list-item {
+  list-style: none;
+}
+footer div.container div.footer ul.footer-list li.footer-list-item a {
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  footer div.container div.footer ul.footer-list li.footer-list-item a {
+    font-size: calc(12px + 4 * (100vw - 100px) / 668);
+  }
+}
+footer div.container div.footer ul.footer-list li.footer-list-item a ion-icon {
+  background: transparent;
+  margin-right: 8px;
+}
+footer div.container div.footer ul.footer-list li.footer-list-item a span {
+  text-transform: uppercase;
+}
+footer div.container div.footer ul.footer-list li.footer-list-item a:hover {
+  transition: 0.3s all ease;
+  color: #47be68;
+}
+footer div.container div.copyright {
+  margin-top: 80px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.5);
+}
+footer div.container div.container-links {
+  font: 100% "Itim", cursive;
+}
+footer div.container div.container-links div.links-license {
+  position: absolute;
+  top: 0;
+  right: 200px;
+  background: rgba(255, 255, 255, 0.139);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 12px;
+  text-align: center;
+  display: inline-block;
+  width: auto;
+  max-width: 500px;
+}
+footer div.container div.container-links div.links-license p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+footer div.container div.container-links div.links-license a {
+  color: #47be68;
+}
+footer div.container div.container-links div.links-license a ion-icon {
+  color: darkgray;
+}
+@media only screen and (max-width: 768px) {
+  footer div.container div.container {
+    padding: 0;
+    position: relative;
+  }
+  footer div.container div.container div.links-license {
+    position: relative;
+    top: 0;
+    right: 0;
+    background: transparent;
+    padding: 0;
+  }
+}
+
+main {
+  min-height: 100vh;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+main section.section-projects div.projects {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 768px) {
+  main section.section-projects div.projects {
+    flex-wrap: wrap;
+  }
+}
+main section.section-projects div.projects div.projects-item {
+  flex: 0 0 48%;
+  margin-top: 40px;
+  background: #201f23;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+@media only screen and (max-width: 768px) {
+  main section.section-projects div.projects div.projects-item {
+    flex: 0 0 100%;
+  }
+}
+main section.section-projects div.projects div.projects-item div.projects-item-img img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+main section.section-projects div.projects div.projects-item div.projects-item-body {
+  padding: 40px;
+}
+main section.section-projects div.projects div.projects-item div.projects-item-body div.project-title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 24px;
+  color: #21CC5E;
+}
+@media only screen and (max-width: 435px) {
+  main section.section-projects div.projects div.projects-item div.projects-item-body div.project-title {
+    font-size: 24px;
+  }
+}
+main section.section-projects div.projects div.projects-item div.projects-item-body div.project-text {
+  margin-top: 24px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+}
+main section.section-projects div.projects div.projects-item div.projects-item-body a.project-link {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  padding-top: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #21CC5E;
+  border-top: 1px solid #21CC5E;
+  align-items: center;
+}
+@media only screen and (max-width: 435px) {
+  main section.section-projects div.projects div.projects-item div.projects-item-body a.project-link {
+    font-size: 14px;
+  }
+}
+main section.section-projects div.project-one {
+  display: flex;
+  overflow: hidden;
+  margin-top: 40px;
+  color: white;
+  background: #201f23;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+@media only screen and (max-width: 768px) {
+  main section.section-projects div.project-one {
+    flex-wrap: wrap;
+  }
+}
+main section.section-projects div.project-one div.project-one-item-img {
+  flex: 0 0 48%;
+}
+main section.section-projects div.project-one div.project-one-item-img img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 768px) {
+  main section.section-projects div.project-one div.project-one-item-img {
+    flex: 0 0 100%;
+  }
+}
+main section.section-projects div.project-one div.project-one-item-body {
+  flex: 0 0 52%;
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media only screen and (max-width: 1050px) {
+  main section.section-projects div.project-one div.project-one-item-body {
+    padding-left: 70px;
+    padding-right: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main section.section-projects div.project-one div.project-one-item-body {
+    flex: 0 0 100%;
+    padding: 40px;
+  }
+}
+main section.section-projects div.project-one div.project-one-item-body div.project-one-item-coming {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+}
+main section.section-projects div.project-one div.project-one-item-body div.project-one-item-title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 24px;
+  color: #21CC5E;
+  margin-top: 40px;
+}
+@media only screen and (max-width: 768px) {
+  main section.section-projects div.project-one div.project-one-item-body div.project-one-item-title {
+    margin-top: 20px;
+  }
+}
+main section.section-projects div.project-one div.project-one-item-body div.project-one-item-text {
+  margin-top: 40px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+@media only screen and (max-width: 768px) {
+  main section.section-projects div.project-one div.project-one-item-body div.project-one-item-text {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+main section.section-objectives {
+  padding: 40px 0;
+}
+main section.section-objectives div.objectives {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  border: 1px solid #47be68;
+  margin-top: 40px;
+  min-height: 86px;
+}
+main section.section-objectives div.objectives div.objectives-item-num {
+  min-width: 86px;
+  width: 86px;
+  min-height: 86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 24px;
+  border-right: 1px solid #47be68;
+}
+@media only screen and (max-width: 768px) {
+  main section.section-objectives div.objectives div.objectives-item-num {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 435px) {
+  main section.section-objectives div.objectives div.objectives-item-num {
+    min-width: 43px;
+    width: 43px;
+    font-size: 26px;
+  }
+}
+main section.section-objectives div.objectives div.objectives-item-text {
+  width: 100%;
+  padding: 0 24px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: justify;
+}
+@media only screen and (max-width: 768px) {
+  main section.section-objectives div.objectives div.objectives-item-text {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  main section.section-objectives div.objectives div.objectives-item-text {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 435px) {
+  main section.section-objectives div.objectives div.objectives-item-text {
+    font-size: 12px;
+    padding: 12px;
+  }
+}
+main section.section-about {
+  padding-bottom: 20px;
+}
+main section.section-about div.section-about-text {
+  margin-top: 30px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+@media only screen and (max-width: 768px) {
+  main section.section-about div.section-about-text {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  main section.section-about div.section-about-text {
+    font-size: 12px;
+    text-align: justify;
+  }
+}
+@media only screen and (max-width: 435px) {
+  main section.section-about div.section-about-text {
+    font-size: 12px;
+  }
+}
+main section.section-about div.section-about-text p {
+  margin-top: 15px;
+}
+
+.title {
+  font-size: 64px;
+  line-height: 88px;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  font: 400% "MultiType Pixel Display Narrow";
+  color: #21CC5E;
+}
+@media only screen and (max-width: 435px) {
+  .title {
+    line-height: 120%;
+    font-size: calc(12px + 26 * (100vw - 100px) / 335);
+  }
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+div.logo a {
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  top: -3px;
+}
+div.logo a span.logo-letter {
+  font: 150% "MultiType Pixel Display Narrow";
+  font-size: 34px;
+}
+div.logo a span.name-company {
+  font-size: 20px;
+  margin-left: 5px;
+  margin-top: 7px;
+}/*# sourceMappingURL=style.css.map */
