@@ -1,0 +1,1209 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap");
+.container {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font: 100% "Maven Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.navbar-container {
+  width: 100vw;
+  height: 72px;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.navbar-container header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  transition: 2s all ease;
+  z-index: 111;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.navbar-container header div.blur {
+  position: fixed;
+  width: 100%;
+  height: 72px;
+  left: 0;
+  right: 0;
+  top: 0;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 99;
+}
+.navbar-container header div.container {
+  height: 72px;
+  width: 100%;
+}
+.navbar-container header div.container nav {
+  position: relative;
+  background: transparent;
+  width: 100%;
+  height: 72px;
+  padding: 0 20px;
+  z-index: 111;
+}
+.navbar-container header div.container nav div.navbar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-container header div.container nav div.navbar div.logo a {
+  color: #000000;
+}
+.navbar-container header div.container nav div.navbar div.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.navbar-container header div.container nav div.navbar div.menu ul.menu-list {
+  max-width: 800px;
+  height: auto;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  text-align: center;
+  list-style: none;
+}
+.navbar-container header div.container nav div.navbar div.menu ul.menu-list li.menu-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin-left: 30px;
+}
+.navbar-container header div.container nav div.navbar div.menu ul.menu-list li.menu-list-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5E5C6C;
+  transition: all 1s ease-out;
+}
+.navbar-container header div.container nav div.navbar div.menu ul.menu-list li.menu-list-item a span {
+  padding-left: 8px;
+}
+.navbar-container header div.container nav div.navbar div.menu ul.menu-list li.menu-list-item button {
+  font: 100% "Maven Pro", sans-serif;
+  display: inline-block;
+  font-weight: 400;
+  width: 110px;
+  height: 40px;
+  background: #2962EF;
+  border-radius: 4px;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  margin: 0 15px;
+  transition: all 1s ease;
+}
+.navbar-container header div.container nav div.navbar div.menu ul.menu-list li.menu-list-item:hover a {
+  color: #2962EF;
+  transition: all 1s ease;
+}
+.navbar-container header div.container nav div.navbar div.menu ul.menu-list li.menu-list-item:hover a svg path {
+  fill: #2962EF;
+  transition: all 1s ease;
+}
+.navbar-container header div.container nav div.navbar div.menu ul.menu-list li.menu-list-item:hover button {
+  transform: scale(0.95);
+  transition: all 1s ease;
+}
+@media only screen and (max-width: 1100px) {
+  .navbar-container header div.container nav {
+    padding: 0 40px;
+  }
+  .navbar-container header div.container nav div.container {
+    padding: 0;
+  }
+}
+.navbar-container header.fixed-nav {
+  width: 100vw;
+  background-color: transparent;
+  position: fixed;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 111;
+  transition: 2s all ease;
+}
+.navbar-container header.fixed-nav div.blur {
+  position: fixed;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-container {
+    padding: 0;
+  }
+  .navbar-container header div.blur {
+    display: none;
+  }
+  .navbar-container header div.container .input-checkbox:checked + .nav-button span {
+    background-color: transparent;
+  }
+  .navbar-container header div.container .input-checkbox:checked + .nav-button span::before {
+    transform: rotate(135deg);
+    background-color: white;
+  }
+  .navbar-container header div.container .input-checkbox:checked + .nav-button span::after {
+    top: -15px;
+    transform: rotate(-135deg);
+    background-color: white;
+  }
+  .navbar-container header div.container .nav-button {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    z-index: 444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    width: 64px;
+    height: 64px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .navbar-container header div.container .nav-button span::after,
+  .navbar-container header div.container .nav-button span::before,
+  .navbar-container header div.container .nav-button span {
+    width: 32px;
+    height: 3px;
+    border-radius: 2px;
+    transition: 0.3s;
+    background-color: #5E5C6C;
+    position: relative;
+  }
+  .navbar-container header div.container .nav-button span::after,
+  .navbar-container header div.container .nav-button span::before {
+    content: "";
+    position: relative;
+    display: inline-block;
+  }
+  .navbar-container header div.container .nav-button span::after {
+    top: -5px;
+  }
+  .navbar-container header div.container nav {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    transition: all 2s ease-out;
+    background: #9998A4;
+  }
+  .navbar-container header div.container nav div.navbar div.logo {
+    display: block;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+  }
+  .navbar-container header div.container nav div.navbar div.logo a {
+    transition: all 1s ease-out;
+  }
+  .navbar-container header div.container nav div.navbar div.logo.remove-logo {
+    display: none;
+  }
+  .navbar-container header div.container nav div.navbar div.logo.add-logo {
+    display: block;
+  }
+  .navbar-container header div.container nav div.navbar div.menu {
+    display: none;
+  }
+  .navbar-container header div.container nav div.navbar div.menu ul.menu-list li a {
+    color: white;
+  }
+  .navbar-container header div.container nav div.navbar div.menu ul.menu-list li a svg path {
+    fill: white;
+  }
+  .navbar-container header div.container nav.open {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #616161;
+    transition: all 3s ease-out;
+    padding: 0;
+  }
+  .navbar-container header div.container nav.open div.navbar {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+  }
+  .navbar-container header div.container nav.open div.navbar div.logo {
+    display: flex;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    z-index: 111;
+  }
+  .navbar-container header div.container nav.open div.navbar div.logo a {
+    color: #FFFFFF;
+    transition: all 1s ease-out;
+  }
+  .navbar-container header div.container nav.open div.navbar div.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .navbar-container header div.container nav.open div.navbar div.menu ul.menu-list {
+    width: inherit;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .navbar-container header div.container nav.open div.navbar div.menu ul.menu-list li {
+    width: 100%;
+    height: 70px;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 768px) and (max-width: 576px) {
+  .navbar-container header div.container nav.open div.navbar div.menu ul.menu-list li {
+    height: 60px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar-container header div.container nav.open div.navbar div.menu ul.menu-list li a {
+    color: white;
+    font-size: 30px;
+    animation: fadeInFromNone 3s both;
+  }
+  .navbar-container header div.container nav.open div.navbar div.menu ul.menu-list li a svg {
+    width: 31px;
+    height: auto;
+  }
+  .navbar-container header div.container nav.open div.navbar div.menu ul.menu-list li a svg path {
+    fill: white;
+  }
+}
+@media only screen and (max-width: 768px) and (max-width: 576px) {
+  .navbar-container header div.container nav.open div.navbar div.menu ul.menu-list li a {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar-container header div.container nav.open div.navbar div.menu ul.menu-list li button {
+    font-size: 25px;
+    width: 200px;
+    height: 60px;
+    animation: fadeInFromNone 3s both;
+  }
+}
+@media only screen and (max-width: 768px) and (max-width: 576px) {
+  .navbar-container header div.container nav.open div.navbar div.menu ul.menu-list li button {
+    width: 95vw;
+    font-size: 20px;
+  }
+}
+@keyframes fadeInFromNone {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+div.footer-container {
+  width: 100vw;
+}
+div.footer-container footer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 403px;
+  background-color: #232427;
+  color: #FFFFFF;
+  padding: 0 40px;
+}
+@media only screen and (max-width: 435px) {
+  div.footer-container footer {
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 310px) {
+  div.footer-container footer {
+    min-height: 650px;
+  }
+}
+div.footer-container footer div.footer {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  padding: 80px 0;
+  font: 100% "Maven Pro", sans-serif;
+}
+@media only screen and (max-width: 768px) {
+  div.footer-container footer div.footer {
+    padding: 50px 0;
+    align-content: flex-start;
+  }
+}
+div.footer-container footer div.footer div.describe {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: auto;
+}
+div.footer-container footer div.footer div.describe div.logo a {
+  color: #FFFFFF;
+}
+div.footer-container footer div.footer div.describe p {
+  margin-top: 20px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  max-width: 343px;
+}
+@media only screen and (max-width: 768px) {
+  div.footer-container footer div.footer div.describe p {
+    max-width: 100%;
+  }
+}
+div.footer-container footer div.footer div.describe div.copyright {
+  color: #D6D5DF;
+}
+div.footer-container footer div.footer div.describe div.copyright p {
+  margin: 0;
+}
+@media only screen and (max-width: 576px) {
+  div.footer-container footer div.footer div.describe div.copyright p {
+    text-align: end;
+  }
+}
+@media only screen and (max-width: 768px) {
+  div.footer-container footer div.footer div.describe {
+    flex-basis: 100%;
+    width: 100%;
+    align-content: flex-start;
+  }
+  div.footer-container footer div.footer div.describe div.copyright {
+    margin: 20px 0;
+  }
+}
+@media only screen and (max-width: 576px) {
+  div.footer-container footer div.footer div.describe {
+    margin-bottom: 20px;
+  }
+}
+div.footer-container footer div.footer div.links {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  height: 217px;
+}
+div.footer-container footer div.footer div.links div.text div.text-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 576px) {
+  div.footer-container footer div.footer div.links div.text div.text-title {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 435px) {
+  div.footer-container footer div.footer div.links div.text div.text-title {
+    font-size: 16px;
+  }
+}
+div.footer-container footer div.footer div.links div.text form label {
+  position: relative;
+  display: block;
+  max-width: 344px;
+  width: 100%;
+  height: 56px;
+}
+@media only screen and (max-width: 768px) {
+  div.footer-container footer div.footer div.links div.text form label {
+    max-width: 480px;
+    width: 100%;
+  }
+}
+div.footer-container footer div.footer div.links div.text form label input {
+  position: absolute;
+  max-width: 344px;
+  width: 100%;
+  height: 56px;
+  padding: 20px;
+  border-radius: 4px;
+  outline: none;
+}
+div.footer-container footer div.footer div.links div.text form label input ::placeholder,
+div.footer-container footer div.footer div.links div.text form label input :-ms-input-placeholder {
+  color: #9998A4;
+}
+@media only screen and (max-width: 768px) {
+  div.footer-container footer div.footer div.links div.text form label input {
+    max-width: 480px;
+    width: 100%;
+  }
+}
+div.footer-container footer div.footer div.links div.text form label input:focus {
+  outline: 1px solid #2962EF;
+}
+div.footer-container footer div.footer div.links div.text form label button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2962EF;
+  border-radius: 4px;
+  border: none;
+  width: 40px;
+  height: 40px;
+  top: 8px;
+  right: 8px;
+  bottom: 8px;
+  cursor: pointer;
+}
+div.footer-container footer div.footer div.links div.text p {
+  max-width: 345px;
+  margin-top: 10px;
+  line-height: 24px;
+}
+@media only screen and (max-width: 768px) {
+  div.footer-container footer div.footer div.links div.text p {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+}
+div.footer-container footer div.footer div.links div.buttons ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+div.footer-container footer div.footer div.links div.buttons ul li {
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  background: #5E5C6C;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease;
+  position: relative;
+  top: 0px;
+}
+div.footer-container footer div.footer div.links div.buttons ul li a {
+  padding: 25px;
+  border-radius: 50%;
+}
+div.footer-container footer div.footer div.links div.buttons ul li a svg {
+  transition: all 1s ease;
+}
+div.footer-container footer div.footer div.links div.buttons ul li a svg path {
+  transition: all 0.7s ease;
+}
+div.footer-container footer div.footer div.links div.buttons ul li a.youtube-link svg {
+  position: relative;
+  top: 2px;
+}
+div.footer-container footer div.footer div.links div.buttons ul li a.linkedin-link svg {
+  width: 25px;
+  height: 25px;
+}
+div.footer-container footer div.footer div.links div.buttons ul li a.twitter-link svg {
+  width: 23px;
+  height: 23px;
+  position: relative;
+  top: 2px;
+}
+div.footer-container footer div.footer div.links div.buttons ul li a.discord-link svg {
+  position: relative;
+  top: 2px;
+}
+div.footer-container footer div.footer div.links div.buttons ul li:hover {
+  transition: all 0.7s ease;
+  background: rgba(94, 92, 108, 0.4392156863);
+  position: relative;
+  top: -10px;
+}
+div.footer-container footer div.footer div.links div.buttons ul li:hover a.youtube-link svg {
+  background: radial-gradient(ellipse at center, white 0%, transparent 100%);
+  background: radial-gradient(ellipse at center, white 0%, transparent 100%);
+  border: none;
+}
+div.footer-container footer div.footer div.links div.buttons ul li:hover a.youtube-link svg path {
+  fill: #CD201F;
+  transition: all 0.7s ease;
+}
+div.footer-container footer div.footer div.links div.buttons ul li:hover a.linkedin-link svg path {
+  fill: rgb(0, 172, 238);
+  transition: all 0.7s ease;
+}
+div.footer-container footer div.footer div.links div.buttons ul li:hover a.twitter-link svg path {
+  fill: rgb(0, 172, 238);
+  transition: all 0.7s ease;
+}
+div.footer-container footer div.footer div.links div.buttons ul li:hover a.discord-link svg path {
+  fill: rgb(0, 172, 238);
+  transition: all 0.7s ease;
+}
+@media only screen and (max-width: 576px) {
+  div.footer-container footer div.footer div.links div.buttons ul {
+    justify-content: center;
+    gap: 10px;
+  }
+}
+@media only screen and (max-width: 310px) {
+  div.footer-container footer div.footer div.links div.buttons ul {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  div.footer-container footer div.footer div.links div.buttons {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  div.footer-container footer div.footer div.links div.buttons {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  div.footer-container footer div.footer div.links {
+    flex-basis: 100%;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  div.footer-container footer {
+    padding: 0 40px;
+  }
+}
+
+main {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  margin-top: 20px;
+  overflow: hidden;
+  z-index: 1;
+}
+main section.section-hero {
+  position: relative;
+}
+@media only screen and (max-width: 992px) {
+  main section.section-hero {
+    height: 870px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  main section.section-hero {
+    height: 800px;
+  }
+}
+main section.section-hero img.hero-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: auto;
+  max-width: 880px;
+  width: 100%;
+  z-index: -1;
+}
+@media only screen and (max-width: 1200px) {
+  main section.section-hero img.hero-img {
+    max-width: 600px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  main section.section-hero img.hero-img {
+    top: unset;
+    bottom: 40px;
+  }
+}
+main section.section-hero div.hero {
+  width: 100%;
+  min-height: 100%;
+  margin-bottom: 110px;
+}
+@media only screen and (max-width: 1200px) {
+  main section.section-hero div.hero {
+    padding-left: 40px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  main section.section-hero div.hero {
+    padding-left: 20px;
+  }
+}
+main section.section-hero div.hero div.hero-item {
+  max-width: 530px;
+}
+@media only screen and (max-width: 1200px) {
+  main section.section-hero div.hero div.hero-item {
+    max-width: 400px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  main section.section-hero div.hero div.hero-item {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 435px) {
+  main section.section-hero div.hero div.hero-item {
+    padding-right: 20px;
+  }
+}
+main section.section-hero div.hero div.hero-item h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 62px;
+  letter-spacing: 0px;
+  padding-top: 100px;
+  max-width: 387px;
+}
+@media only screen and (max-width: 1200px) {
+  main section.section-hero div.hero div.hero-item h1 {
+    padding-top: 50px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  main section.section-hero div.hero div.hero-item h1 {
+    padding-top: 10px;
+    font-size: 38px;
+    line-height: 42px;
+  }
+}
+@media only screen and (max-width: 435px) {
+  main section.section-hero div.hero div.hero-item h1 {
+    padding-right: 20px;
+    font-size: 33px;
+  }
+}
+main section.section-hero div.hero div.hero-item p {
+  color: #9998A4;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  margin-top: 15px;
+  padding-right: 5px;
+  text-align: justify;
+  max-width: 530px;
+}
+@media only screen and (max-width: 992px) {
+  main section.section-hero div.hero div.hero-item p {
+    max-width: 95%;
+  }
+}
+@media only screen and (max-width: 435px) {
+  main section.section-hero div.hero div.hero-item p {
+    line-height: 20px;
+  }
+}
+main section.section-hero div.hero div.hero-item div.hero-buttons {
+  margin-top: 62px;
+  display: flex;
+  flex-direction: row;
+}
+@media only screen and (max-width: 992px) {
+  main section.section-hero div.hero div.hero-item div.hero-buttons {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  main section.section-hero div.hero div.hero-item div.hero-buttons {
+    justify-content: space-around;
+    position: relative;
+    left: -20px;
+  }
+}
+@media only screen and (max-width: 435px) {
+  main section.section-hero div.hero div.hero-item div.hero-buttons {
+    left: unset;
+  }
+}
+main section.section-hero div.hero div.hero-item div.hero-buttons button {
+  width: 144px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0px;
+}
+main section.section-hero div.hero div.hero-item div.hero-buttons button svg {
+  margin-left: 5px;
+  transition: all 1s ease;
+}
+main section.section-hero div.hero div.hero-item div.hero-buttons button.hero-button {
+  background-color: #2962EF;
+}
+main section.section-hero div.hero div.hero-item div.hero-buttons button.hero-button-watch {
+  background-color: transparent;
+  color: #2962EF;
+  transition: all 0.5s;
+  margin-left: 19px;
+}
+main section.section-hero div.hero div.hero-item div.hero-buttons button.hero-button:hover svg {
+  transform: translate(4px, -4px);
+  transition: all 1s ease;
+}
+main section.section-hero div.hero div.hero-item div.hero-buttons button.hero-button-watch:hover {
+  border: 2px solid #2962EF;
+  transition: all 0.5s;
+}
+@media only screen and (max-width: 435px) {
+  main section.section-hero div.hero div.hero-item div.hero-buttons {
+    flex-direction: column;
+  }
+  main section.section-hero div.hero div.hero-item div.hero-buttons button {
+    width: 100%;
+  }
+  main section.section-hero div.hero div.hero-item div.hero-buttons button.hero-button-watch {
+    margin: 10px 0;
+  }
+}
+main section.section-hero div.hero div.hero-stats-title {
+  color: #9998A4;
+  text-transform: uppercase;
+  margin-top: 130px;
+  margin-bottom: 25px;
+}
+@media only screen and (max-width: 1200px) {
+  main section.section-hero div.hero div.hero-stats-title {
+    margin-top: 60px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  main section.section-hero div.hero div.hero-stats-title {
+    margin-top: 40px;
+  }
+}
+main section.section-hero div.hero div.hero-stats {
+  display: flex;
+  gap: 80px;
+  padding-bottom: 86px;
+}
+@media only screen and (max-width: 992px) {
+  main section.section-hero div.hero div.hero-stats {
+    padding-bottom: 0;
+  }
+}
+@media only screen and (max-width: 576px) {
+  main section.section-hero div.hero div.hero-stats {
+    justify-content: space-between;
+    gap: unset;
+    padding-right: 20px;
+  }
+}
+main section.section-hero div.hero div.hero-stats div.hero-stats-item div.hero-stats-item-num {
+  color: #232427;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0px;
+}
+main section.section-hero div.hero div.hero-stats div.hero-stats-item div.hero-stats-item-text {
+  margin-top: 12px;
+  color: #5E5C6C;
+}
+main section.section-special {
+  height: 100%;
+}
+main section.section-special div.special-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 50px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 110px;
+}
+main section.section-special div.special-row div.special-row-item {
+  background: #FFFFFF;
+  border: 1px solid #EFEFF4;
+  border-radius: 8px;
+  padding: 0 40px;
+  padding-top: 60px;
+  padding-bottom: 93px;
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 346px;
+  height: auto;
+  justify-content: center;
+  text-align: justify;
+  transition: all 0.5s ease;
+}
+@media only screen and (max-width: 1064px) {
+  main section.section-special div.special-row div.special-row-item {
+    flex: 0 1 45%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main section.section-special div.special-row div.special-row-item {
+    flex: 0 1 100%;
+    margin: 0 40px;
+  }
+}
+main section.section-special div.special-row div.special-row-item h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  position: relative;
+}
+@media only screen and (max-width: 768px) {
+  main section.section-special div.special-row div.special-row-item h2 {
+    font-size: 33px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  main section.section-special div.special-row div.special-row-item h2 {
+    font-size: 30px;
+  }
+}
+main section.section-special div.special-row div.special-row-item h2 span {
+  font-size: 30px;
+  position: absolute;
+  bottom: 6px;
+  margin-left: 5px;
+}
+main section.section-special div.special-row div.special-row-item p.first-text {
+  color: #9998A4;
+  line-height: 24px;
+}
+main section.section-special div.special-row div.special-row-item div.special-row-item-icon div.icon {
+  width: 77px;
+  height: 77px;
+  border-radius: 50%;
+  background: #FAFBFD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+main section.section-special div.special-row div.special-row-item div.special-row-item-title {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 18px;
+  color: #232427;
+  padding-top: 40px;
+}
+main section.section-special div.special-row div.special-row-item div.special-row-item-text {
+  color: #9998A4;
+  line-height: 24px;
+  padding-top: 16px;
+  width: auto;
+}
+main section.section-special div.special-row div.special-row-item:hover {
+  background: #FAFBFD;
+  border: 1px solid transparent;
+  transition: all 0.5s ease;
+}
+main section.section-special div.special-row div.special-row-item:hover div.special-row-item-icon div.icon {
+  background: #FFFFFF;
+  box-shadow: 0px 6px 15px rgba(35, 36, 39, 0.05);
+  transition: all 0.5s ease;
+}
+main section.section-special div.special-row div.special-row-item:nth-child(1) {
+  border: none;
+  padding-left: 0;
+}
+main section.section-special div.special-row div.special-row-item:nth-child(1) p.first-text {
+  padding-top: 15px;
+}
+@media only screen and (max-width: 768px) {
+  main section.section-special div.special-row div.special-row-item:nth-child(1) {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+main section.section-special div.special-row div.special-row-item:nth-child(1):hover {
+  background: none;
+}
+main section.section-trusted {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background: #FAF9FA;
+  padding: 50px 0;
+  margin-bottom: 110px;
+}
+main section.section-trusted div.trusted-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6px;
+  padding: 0 20px;
+}
+@media only screen and (max-width: 576px) {
+  main section.section-trusted div.trusted-row {
+    padding: 0 20px;
+  }
+}
+main section.section-trusted div.trusted-row div.trusted-row-title h3 {
+  font-size: 28px;
+  line-height: 28px;
+}
+@media only screen and (max-width: 576px) {
+  main section.section-trusted div.trusted-row div.trusted-row-title h3 {
+    font-size: 24px;
+  }
+}
+main section.section-trusted div.trusted-row div.trusted-row-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  -moz-column-gap: 65px;
+       column-gap: 65px;
+}
+@media only screen and (max-width: 992px) {
+  main section.section-trusted div.trusted-row div.trusted-row-items {
+    -moz-column-gap: 35px;
+         column-gap: 35px;
+  }
+}
+main section.section-trusted div.trusted-row div.trusted-row-items img.item {
+  margin-top: 40px;
+}
+@media only screen and (max-width: 768px) {
+  main section.section-trusted div.trusted-row div.trusted-row-items img.item {
+    margin-top: 30px;
+  }
+}
+main section.section-support {
+  width: 100%;
+  height: auto;
+  padding: 32px 0;
+  margin-bottom: 110px;
+}
+main section.section-support div.support-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 15px;
+  padding-left: 7px;
+}
+main section.section-support div.support-text {
+  color: #5E5C6C;
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 45px;
+  padding-left: 7px;
+}
+main section.section-support div.support-team-even,
+main section.section-support div.support-team-odd {
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+}
+main section.section-support div.support-team-even div.support-team-item,
+main section.section-support div.support-team-odd div.support-team-item {
+  padding: 20px;
+  width: 255px;
+  height: 217px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+main section.section-support div.support-team-even div.support-team-item div.support-team-item-img,
+main section.section-support div.support-team-odd div.support-team-item div.support-team-item-img {
+  padding-bottom: 15px;
+}
+main section.section-support div.support-team-even div.support-team-item div.support-team-item-img img,
+main section.section-support div.support-team-odd div.support-team-item div.support-team-item-img img {
+  width: 100%;
+  height: 100%;
+}
+main section.section-support div.support-team-even div.support-team-item div.support-team-item-name,
+main section.section-support div.support-team-odd div.support-team-item div.support-team-item-name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  padding-bottom: 10px;
+}
+main section.section-support div.support-team-even div.support-team-item div.support-team-item-social,
+main section.section-support div.support-team-odd div.support-team-item div.support-team-item-social {
+  display: flex;
+  align-items: center;
+}
+main section.section-support div.support-team-even div.support-team-item div.support-team-item-social svg:nth-child(1),
+main section.section-support div.support-team-odd div.support-team-item div.support-team-item-social svg:nth-child(1) {
+  margin-right: 10px;
+}
+main section.section-support div.support-team-even {
+  margin-bottom: 30px;
+}
+main section.section-support div.support-team-even div.support-team-item:nth-child(even) {
+  background: white;
+  box-shadow: 0px 4px 144px rgba(0, 0, 0, 0.04);
+  filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.05));
+}
+main section.section-support div.support-team-even div.support-team-item:nth-child(odd) {
+  background: #FAFBFD;
+}
+main section.section-support div.support-team-odd div.support-team-item:nth-child(even) {
+  background: #FAFBFD;
+}
+main section.section-support div.support-team-odd div.support-team-item:nth-child(odd) {
+  background: white;
+  box-shadow: 0px 4px 144px rgba(0, 0, 0, 0.04);
+  filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.05));
+}
+@media only screen and (max-width: 1080px) {
+  main section.section-support div.support-title,
+  main section.section-support div.support-text {
+    text-align: center;
+  }
+  main section.section-support div.support-team-even,
+  main section.section-support div.support-team-odd {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 30px;
+  }
+  main section.section-support div.support-team-even {
+    margin-bottom: 30px;
+  }
+  main section.section-support div.support-team-even div.support-team-item:nth-child(2),
+  main section.section-support div.support-team-even div.support-team-item:nth-child(3) {
+    background: white;
+    box-shadow: 0px 4px 144px rgba(0, 0, 0, 0.04);
+    filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.05));
+  }
+  main section.section-support div.support-team-even div.support-team-item:nth-child(1),
+  main section.section-support div.support-team-even div.support-team-item:nth-child(4) {
+    background: #FAFBFD;
+    box-shadow: none;
+    filter: none;
+  }
+  main section.section-support div.support-team-odd div.support-team-item:nth-child(1),
+  main section.section-support div.support-team-odd div.support-team-item:nth-child(4) {
+    background: #FAFBFD;
+    box-shadow: none;
+    filter: none;
+  }
+  main section.section-support div.support-team-odd div.support-team-item:nth-child(2),
+  main section.section-support div.support-team-odd div.support-team-item:nth-child(3) {
+    background: white;
+    box-shadow: 0px 4px 144px rgba(0, 0, 0, 0.04);
+    filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.05));
+  }
+}
+@media only screen and (max-width: 730px) {
+  main section.section-support div.support-team-even,
+  main section.section-support div.support-team-odd {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 560px) {
+  main section.section-support div.support-team-even,
+  main section.section-support div.support-team-odd {
+    grid-template-columns: auto;
+  }
+  main section.section-support div.support-team-even,
+  main section.section-support div.support-team-odd {
+    margin-bottom: 30px;
+  }
+  main section.section-support div.support-team-even div.support-team-item:nth-child(even),
+  main section.section-support div.support-team-odd div.support-team-item:nth-child(even) {
+    background: white;
+    box-shadow: 0px 4px 144px rgba(0, 0, 0, 0.04);
+    filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.05));
+  }
+  main section.section-support div.support-team-even div.support-team-item:nth-child(odd),
+  main section.section-support div.support-team-odd div.support-team-item:nth-child(odd) {
+    background: #FAFBFD;
+    box-shadow: none;
+    filter: none;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+span.name-company {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0px;
+}
+
+.emoji {
+  font: 100% "Noto Color Emoji", sans-serif;
+}/*# sourceMappingURL=style.css.map */
