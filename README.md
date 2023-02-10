@@ -3,7 +3,7 @@ A collection of landing (one-page) websites from the Upwork side job
 
 ## First project 
 
-[![](https://img.shields.io/badge/Click_me_&#10138;-brightgreen?style=for-the-badge)](https://kseniiamarkiv.github.io/landing-pages-collection/100doll?target=_blank)
+[![](https://img.shields.io/badge/Click_me_&#10138;-brightgreen?style=for-the-badge)](https://kseniiamarkiv.github.io/landing-pages-collection/100doll)
 
   
 ### Description:
@@ -35,7 +35,7 @@ A collection of landing (one-page) websites from the Upwork side job
 
 ## Second project 
 
-[![](https://img.shields.io/badge/Click_me_&#10138;-yellow?style=for-the-badge)](https://kseniiamarkiv.github.io/landing-pages-collection/350doll?target=_blank)
+[![](https://img.shields.io/badge/Click_me_&#10138;-yellow?style=for-the-badge)](https://kseniiamarkiv.github.io/landing-pages-collection/350doll)
 
 ### Description:
 
