@@ -1,10 +1,12 @@
 # landing-pages-collection
 A collection of landing (one-page) websites from the Upwork side job
+$$\color{gray}\text{more\ details\ in\ the\ project\ folder}$$
+
 
 ## First project 
 
 [![](https://img.shields.io/badge/Click_me_&#10138;-brightgreen?style=for-the-badge)](https://kseniiamarkiv.github.io/landing-pages-collection/100doll)
-
+*the link to check the website*
   
 ### Description:
 
@@ -36,7 +38,7 @@ A collection of landing (one-page) websites from the Upwork side job
 ## Second project 
 
 [![](https://img.shields.io/badge/Click_me_&#10138;-yellow?style=for-the-badge)](https://kseniiamarkiv.github.io/landing-pages-collection/350doll)
-
+*the link to check the website*
 ### Description:
 
 *the landing page project, performed:*
