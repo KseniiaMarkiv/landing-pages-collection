@@ -9,9 +9,11 @@
 
 **&#10003;** *adaptive pages;*
 
+![image](https://kseniiamarkiv.github.io/landing-pages-collection/100doll/mobile_version.jpg)
+
 **&#10003;** *adapted images by myself (it allows cuz the client gave me high-quality images for a laptop screen);*
 
-![image](https://kseniiamarkiv.github.io/landing-pages-collection/100doll/mobile_version.jpg)
+![image](https://kseniiamarkiv.github.io/landing-pages-collection/100doll/1.jpg)
 
 
 **&#10003;** *adaptive navbar, footer as was the requirement by the customer (design performed by myself).*
