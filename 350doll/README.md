@@ -6,6 +6,12 @@
 *the landing page project, performed:*
 
 **&#10003;** *adaptive pages;*
+$$\color{orange}\textit{mobile\ screen}$$  
+![image](https://kseniiamarkiv.github.io/landing-pages-collection/350doll/mobile.jpg)
+
+$$\color{orange}\textit{desctop\ screen}$$  
+![image](https://kseniiamarkiv.github.io/landing-pages-collection/350doll/1.jpg)
+
 
 **&#10003;** *not adapted images (the requirement was not stated by the customer);*
 
@@ -17,3 +23,13 @@
 ### $\color{blue}\text{Also\ made\ an\ improvement\ to\ the\ landing\ page:}$
 
 $\color{gray}\text{an\ improvement\ to\ the\ landing\ page\ the\ requirement\ was\ not\ stated\ by\ the\ customer}$
+
+it's speed although the customer has not ordered it
+
+$$\color{orange}\textit{image\ of\ speed\ for\ desctop}$$  
+
+![image](https://kseniiamarkiv.github.io/landing-pages-collection/350doll/speed-desctop.jpg)
+
+$$\color{orange}\textit{image\ of\ speed\ for\ mobile}$$  
+
+![image](https://kseniiamarkiv.github.io/landing-pages-collection/350doll/speed-mobile.jpg)
