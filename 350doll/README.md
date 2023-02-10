@@ -5,17 +5,20 @@
 
 *the landing page project, performed:*
 
-**&#10003;** *adaptive pages;*
+**&#10003;** *a responsive design of pages;*
 $$\color{orange}\textit{mobile\ screen}$$  
-![image](https://kseniiamarkiv.github.io/landing-pages-collection/350doll/mobile.jpg)
+  
+![image](https://kseniiamarkiv.github.io/landing-pages-collection/350doll/mobile.jpg) 
 
 $$\color{orange}\textit{desctop\ screen}$$  
-![image](https://kseniiamarkiv.github.io/landing-pages-collection/350doll/1.jpg)
+
+![image](https://kseniiamarkiv.github.io/landing-pages-collection/350doll/1.jpg)   
+
 
 
 **&#10003;** *not adapted images (the requirement was not stated by the customer);*
 
-**&#10003;** *adaptive navbar, footer as was the requirement by the customer (design performed by myself).*
+**&#10003;** *a responsive design of navbar, footer as was the requirement by the customer (design performed by myself).*
 
 **on HTML, CSS and JS languages**
 
