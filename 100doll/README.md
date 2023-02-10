@@ -7,7 +7,7 @@
 
 *the simple landing page project, performed:*
 
-**&#10003;** *adaptive pages;*
+**&#10003;** *a responsive design of pages;*
 
 ![image](https://kseniiamarkiv.github.io/landing-pages-collection/100doll/1.jpeg)
 
@@ -16,7 +16,7 @@
 ![image](https://kseniiamarkiv.github.io/landing-pages-collection/100doll/mobile_version.jpg)
 
 
-**&#10003;** *adaptive navbar, footer as was the requirement by the customer (design performed by myself).*
+**&#10003;** *a responsive design of navbar, footer as was the requirement by the customer (design performed by myself).*
 
 **on HTML, CSS and JS languages**
 
