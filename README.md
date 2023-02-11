@@ -12,11 +12,11 @@ $$\color{gray}\text{more\ details\ in\ the\ project\ folder}$$
 
 *the simple landing page project, performed:*
 
-**&#10003;** *adaptive pages;*
+**&#10003;** *a responsive design of pages;*
 
-**&#10003;** *adapted images by myself (it allows cuz the client gave me high-quality images for a laptop screen);*
+**&#10003;** *adaptive images by myself (it allows cuz the client gave me high-quality images for a laptop screen);*
 
-**&#10003;** *adaptive navbar, footer as was the requirement by the customer (design performed by myself).*
+**&#10003;** *a responsive design of navbar, footer as was the requirement by the customer (design performed by myself).*
 
 **on HTML, CSS and JS languages**
 
@@ -43,11 +43,11 @@ $$\color{gray}\text{more\ details\ in\ the\ project\ folder}$$
 
 *the landing page project, performed:*
 
-**&#10003;** *adaptive pages;*
+**&#10003;** *a responsive design of pages;*
 
 **&#10003;** *not adapted images (the requirement was not stated by the customer);*
 
-**&#10003;** *adaptive navbar, footer as was the requirement by the customer (design performed by myself).*
+**&#10003;** *a responsive design of navbar, footer as was the requirement by the customer (design performed by myself).*
 
 **on HTML, CSS and JS languages**
 
